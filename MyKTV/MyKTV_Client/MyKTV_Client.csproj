@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{30949B4E-2B63-4D42-B760-1A7299FFABB2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MyKtv_Client</RootNamespace>
+    <AssemblyName>MyKtv_Client</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>moe.2 %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSongType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSongType.Designer.cs">
+      <DependentUpon>frmSongType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSongList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSongList.Designer.cs">
+      <DependentUpon>frmSongList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderByClientCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderByClientCount.Designer.cs">
+      <DependentUpon>frmOrderByClientCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderBySongAB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderBySongAB.Designer.cs">
+      <DependentUpon>frmOrderBySongAB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderByStar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderByStar.Designer.cs">
+      <DependentUpon>frmOrderByStar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderBySongWordCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderBySongWordCount.Designer.cs">
+      <DependentUpon>frmOrderBySongWordCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlayer.Designer.cs">
+      <DependentUpon>frmPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSomeSong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSomeSong.Designer.cs">
+      <DependentUpon>frmSomeSong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStarList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStarList.Designer.cs">
+      <DependentUpon>frmStarList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSongType.resx">
+      <DependentUpon>frmSongType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSongList.resx">
+      <DependentUpon>frmSongList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderByClientCount.resx">
+      <DependentUpon>frmOrderByClientCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderBySongAB.resx">
+      <DependentUpon>frmOrderBySongAB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderByStar.resx">
+      <DependentUpon>frmOrderByStar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderBySongWordCount.resx">
+      <DependentUpon>frmOrderBySongWordCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlayer.resx">
+      <DependentUpon>frmPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSomeSong.resx">
+      <DependentUpon>frmSomeSong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStarList.resx">
+      <DependentUpon>frmStarList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ktv-bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyKtv_Tool\MyKTV_Tool.csproj">
+      <Project>{3566e0de-dd01-4ce6-af67-ad981bbc4c18}</Project>
+      <Name>MyKTV_Tool</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fy-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nav.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fy-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nav1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fy-11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fy-12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nav2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\j.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\k-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\q-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\j1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\k-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="moe.2 %281%29.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
